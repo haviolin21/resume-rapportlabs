@@ -632,3 +632,35 @@ a {
   color: #fff;
   border-color: var(--primary-color);
 }
+
+/* Scroll to Top Button */
+.btn-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: var(--text-dark);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.btn-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.btn-top:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+}

@@ -72,4 +72,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Scroll to Top Button
+  const btnTop = document.getElementById('btn-top');
+  if (btnTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btnTop.classList.add('show');
+      } else {
+        btnTop.classList.remove('show');
+      }
+    });
+
+    btnTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
 });
