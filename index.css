@@ -133,11 +133,35 @@ a {
   color: var(--text-body);
   border-left: 3px solid var(--border-color);
   padding-left: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .contact-info strong {
   margin-right: 0.5rem;
   color: var(--text-dark);
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--text-dark);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+.btn-download:hover {
+  background-color: var(--primary-color);
 }
 
 /* Typography & Content */
