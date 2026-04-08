@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #2563EB;
-  --primary-hover: #1D4ED8;
+  --primary-color: #F8B400;
+  --primary-hover: #DF9E00;
   --text-dark: #1F2937;
   --text-body: #4B5563;
   --text-light: #9CA3AF;
@@ -293,8 +293,8 @@ a {
 }
 
 .tech-stack span {
-  background: #EFF6FF;
-  color: var(--primary-color);
+  background: #FFF9E6;
+  color: #B28200;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
   font-size: 0.8rem;
